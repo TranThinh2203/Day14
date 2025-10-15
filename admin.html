@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Quản lý người dùng</h1>
+    <div class="container">
+        <div class="card">
+        <h3>Thêm / Sửa người dùng</h3>
+        <form id="userForm">
+        <div class="row">
+        <input id="name" placeholder="Họ tên" required />
+        <input id="email" type="email" placeholder="Email" required />
+        <select id="role">
+        <option value="User">User</option>
+        <option value="Admin">Admin</option>
+        </select>
+        <button id="saveBtn" type="submit">Thêm</button>
+        </div>
+        <input type="hidden" id="editingIndex" />
+        </form>
+        
+        
+        <h3>Danh sách người dùng</h3>
+        <table id="usersTable">
+        <thead>
+        <tr><th>#</th><th>Họ tên</th><th>Email</th><th>Vai trò</th><th>Hành động</th></tr>
+        </thead>
+        <tbody></tbody>
+        </table>
+        </div>
+        </div>
+    <script src="admin.js"></script>
+</body>
+</html>
